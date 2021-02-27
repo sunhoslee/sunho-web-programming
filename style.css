@@ -1,0 +1,28 @@
+    @font-face {
+        font-family: 'acumin'
+        src: url('assets/AcuminVariableConcept.otf') format('otf');
+    }    
+
+
+
+h1 {
+    color: darkgrey;
+    font-family: aktiv-grotesk, sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 20px;
+}
+
+p2 {
+    color: darkgrey;
+    font-family: freight-big-pro,serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 60px;
+}
+
+p {
+    font-family: 'acumin';
+    font-weight: 400;
+    font-size: 14px;
+}
