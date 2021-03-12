@@ -2,5 +2,61 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
+
+section {
+    width: 100vw;
+}
+
+
+.hero {
+    height: 500px; 
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.hero-text-container, .hero-image-container {
+    width: 50%;
+}
+
+.hero-image-container {
+    background: url(cover.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-text-container {
+    background-color: black;
+    color: white;
+    text-align: center; 
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+
+.hero-text {
+    max-width: 50%;
+}
+
+.hero-text *{
+    margin-bottom: 5%;
+}
+
+h2 {
+    text-transform: uppercase;
+}
+
+.articles {
+    width: 80%;
+    display: flex;
+    margin: auto;
+}
+
+article {
+    flex: 1;
+    flex-basis: 50%;
+    padding: 3%;
+}
