@@ -110,7 +110,7 @@ transition:all 1.8s ease
 .petals{
     display: block;
     width:100%;
-    position: relative
+    position: relative;
     z-index: 1;
 }
 
@@ -206,6 +206,7 @@ img {
     grid-gap: 20px 5px;
     margin: 50px 50px;
     z-index: 2;
+    position: relative;
 
 }
 
