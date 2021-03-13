@@ -13,75 +13,201 @@ body, html {
     -moz-osx-font-smoothing: grayscale;
 }
 
+
+/* header */
 header {
     display: block;
 }
 
 .site-header {
+    height: 180px;
+    width: 100%;
+    color: rgb (5,5,5);
+    display: block;
+    box-sizing: border-box;
+    position: fixed;
 
 }
 
 .site-text-container {
-
+    margin: 50px 50px;
+    width: 80%;
+    opacity: 1;
 }
 
 .site-text {
+    color: white;
+    font-family: aktiv-grotesk, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.5em;
+}
 
+.site-subtext {
+    color: white;
+    font-family: aktiv-grotesk, sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 13px;
+    line-height: 1.5em;
 }
 
 
+
+/* arrow */
+.scroll-arrow{
+    display:inline-block;
+    height:10rem;
+    stroke-width:3;
+    width:2.4rem
+}
+
+.arrow-line{
+stroke-dasharray:90px;
+stroke-dashoffset:90px;
+transition:all .5s ease
+}
+.arrow-left{
+stroke-dasharray:10px;
+stroke-dashoffset:10px;
+transition:all .8s ease
+}
+.arrow-right{
+stroke-dasharray:10px;
+stroke-dashoffset:10px;
+transition:all 1.8s ease
+}
+
+
+
 /* petals animation */
-    .img {
-        width: 5%;
-        height: 300px;
-        animation: petal1 10s ease-in-out alternate infinite;
+.petals{
+    display: inline-block;
+    width:100%;
+    z-index: -1;
+}
+.img {
+    width: 3%;
+    height: 300px;
+    animation: petal1 10s ease-in-out alternate infinite;
     }
-        img {
-        width: 100%;
-        }
-        @keyframes petal1 {
-        0% {
-            transform: rotate(90deg) scale(1);
+
+img {
+    width: 100%;
+    }
+
+@keyframes petal1 {
+    0% {
+        transform: rotate(90deg) scale(1);
         }
 
-        100% {
-            transform: rotate(45deg) scale(2);
+    100% {
+        transform: rotate(45deg) scale(1.5);
         }
-        }
+    }
 
-    .img2 {
-        width: 5%;
+
+.img2 {
+        width: 3%;
         height: 500px;
         animation: petal2 10s ease-in alternate-reverse infinite;
     }
-        img {
-        width: 100%;
-        }
-        @keyframes petal2 {
+       
+@keyframes petal2 {
         0% {
             transform: skew(-15deg, 15deg) rotate(90deg) scale(1.5);
-        }
+            }
 
         100% {
             transform: skew(70deg, 0deg) rotate(-10deg) scale(1);
-        }
-        }
+            }
+    }
 
-    
-    .img3 {
-        width: 5%;
+
+.img3 {
+        width: 3%;
         height: 400px;
         animation: petal3 10s ease-in alternate infinite;
     }
-        img {
-        width: 100%;
-        }
-        @keyframes petal3 {
+      
+@keyframes petal3 {
         0% {
             transform:  rotate(90deg) scale(1);
-        }
+            }
 
         100% {
             transform: rotate(30deg) scale(0.5);
+            }
+    }
+
+.img4 {
+    width: 3%;
+    height: 300px;
+    animation: petal1 10s ease-in-out alternate infinite;
+    }
+
+@keyframes petal1 {
+    0% {
+        transform: rotate(90deg) scale(1);
         }
+
+    100% {
+        transform: rotate(45deg) scale(1.5);
         }
+}
+
+
+/* grid */
+.grid-container{
+    display:grid;
+    align-items: flex-start;
+    grid-template: repeat(10, 1fr) / 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 20px 5px;
+    margin: 50px 50px;
+    z-index: 1;
+
+}
+
+.poem{
+    color: white;
+    font-family: aktiv-grotesk, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.2em;}
+
+.poem1{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.poem2{
+    grid-column-start: 4;
+    grid-column-end: 6;
+    grid-row-start: 2;
+}
+
+.poem3{
+    grid-column-start: 2;
+    grid-column-end: 4;    
+    grid-row-start: 4;
+}
+
+.poem4{
+    grid-column-start: 4;
+    grid-column-end: 6;    
+    grid-row-start: 5;
+}
+
+.poem5{
+    grid-column-start: 6;
+    grid-column-end: 7;    
+    grid-row-start: 7;
+}
+
+.poem6{
+    grid-column-start: 1;
+    grid-column-end: 3;    
+    grid-row-start: 8;
+}
