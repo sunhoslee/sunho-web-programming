@@ -6,34 +6,13 @@ $("document").ready(function() {
     $(".poem-title").mouseleave(changeBack);
 
 
-    $("#serif").click(makeSerif);
-
-    $("#sans-serif").click(makeSans);
-
-    $("#monospace").click(makeMono);
-
 });
 
 function changeColor() {
-    $("h1").css("color","gray");
-
+    $("h1").css("color","lightgrey");
 }
 
 
 function changeBack() {
     $("h1").css("color","white");
-
-}
-
-function makeSerif() {
-    $("p").css("font-family", "serif");
-
-}
-
-function makeSans() {
-    $("p").css("font-family", "sans-serif");
-}
-
-function makeMono() {
-    $("p").css("font-family", "monospace");
 }
