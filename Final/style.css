@@ -83,6 +83,7 @@ header {
 /* arrow */
 .scroll-arrow{
     display:inline-block;
+    margin-top: 10px;
     height:10rem;
     stroke-width:3;
     width:2.4rem
