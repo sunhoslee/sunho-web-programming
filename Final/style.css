@@ -118,6 +118,8 @@ transition:all 1.8s ease
 
 .petals2{
     display: block;
+    align-items: center;
+    justify-content: center;
     width:100%;
     position: fixed;
     z-index: 0;
@@ -127,7 +129,7 @@ transition:all 1.8s ease
 .img {
     width: 3%;
     height: 300px;
-    animation: petal1 10s ease-in-out alternate infinite;
+    animation: petal1 13s ease-in-out alternate infinite;
     }
 
 img {
@@ -147,8 +149,8 @@ img {
 
 .img2 {
         width: 3%;
-        height: 500px;
-        animation: petal2 10s ease-in alternate-reverse infinite;
+        height: 600px;
+        animation: petal2 16s ease-in-out alternate-reverse infinite;
     }
        
 @keyframes petal2 {
@@ -164,8 +166,8 @@ img {
 
 .img3 {
         width: 3%;
-        height: 400px;
-        animation: petal3 11s ease-in alternate infinite;
+        height: 600px;
+        animation: petal3 11s ease-in-out alternate infinite;
     }
       
 @keyframes petal3 {
@@ -180,7 +182,7 @@ img {
 
 .img4 {
     width: 2%;
-    height: 300px;
+    height: 600px;
     animation: petal1 16s ease-in-out alternate-reverse infinite;
     }
 
