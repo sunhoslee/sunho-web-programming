@@ -15,7 +15,7 @@ $("document").ready(function() {
 });
 
 function changeColor() {
-    $("h1").css("color","red");
+    $("h1").css("color","gray");
 
 }
 

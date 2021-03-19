@@ -111,8 +111,9 @@ transition:all 1.8s ease
 .petals{
     display: block;
     width:100%;
-    position: relative;
+    position: fixed;
     z-index: 1;
+    top:0;
 }
 
 .img {
@@ -187,7 +188,7 @@ img {
 
 @font-face {
     font-family: oroban-elegans;
-    src: url(fonts/Oroban-Elegans.otf) format("otf");
+    src: url(fonts/Oroban-Elegans.otf);
 }
 
 .poem-title{
