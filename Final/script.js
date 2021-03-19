@@ -9,7 +9,7 @@ $("document").ready(function() {
 });
 
 function changeColor() {
-    $("h1").css("color","lightgrey");
+    $("h1").css("color","aliceblue");
 }
 
 
