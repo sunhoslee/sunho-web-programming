@@ -187,7 +187,7 @@ img {
 
 @font-face {
     font-family: oroban-elegans;
-    src: url(fonts/Oroban-Elegans.otf);
+    src: url(fonts/Oroban-Elegans.otf) format("otf");
 }
 
 .poem-title{

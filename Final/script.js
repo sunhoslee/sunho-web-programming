@@ -2,7 +2,9 @@ $("document").ready(function() {
 
     console.log('Im working!');
 
-    $("#poem-title").hover(changeColor);
+    $(".poem-title").mouseenter(changeColor);
+    $(".poem-title").mouseleave(changeBack);
+
 
     $("#serif").click(makeSerif);
 
@@ -14,6 +16,12 @@ $("document").ready(function() {
 
 function changeColor() {
     $("h1").css("color","red");
+
+}
+
+
+function changeBack() {
+    $("h1").css("color","white");
 
 }
 
