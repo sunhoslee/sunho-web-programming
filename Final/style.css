@@ -14,6 +14,11 @@ body, html {
 }
 
 
+@font-face {
+    font-family: oroban-elegans;
+    src: url(fonts/Oroban-Elegans.otf);
+}
+
 /* header */
 header {
     display: block;
@@ -194,11 +199,6 @@ img {
     100% {
         transform: rotate(45deg) scale(1.5);
         }
-}
-
-@font-face {
-    font-family: oroban-elegans;
-    src: url(fonts/Oroban-Elegans.otf);
 }
 
 .poem-title{
